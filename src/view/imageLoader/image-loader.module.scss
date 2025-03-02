@@ -1,0 +1,47 @@
+.wrapper {
+  position: relative;
+
+  &.show-icon {
+    .icon {
+      opacity: 1;
+    }
+  }
+
+  &.hide-icon {
+    .icon {
+      opacity: 0;
+    }
+  }
+
+  &.show-image {
+    .thumb {
+      opacity: 1;
+    }
+  }
+
+  &.hide-image {
+    .thumb {
+      opacity: 0;
+    }
+  }
+
+  span.icon {
+    font-size: 4rem;
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    border: lightgrey 1px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  img.thumb {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-color: darksalmon;
+    transition: box-shadow 150ms, margin 150ms, padding 150ms;
+  }
+} 

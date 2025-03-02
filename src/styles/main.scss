@@ -1,0 +1,6 @@
+@use "./reset";
+@use "./_mixins";
+
+@keyframes spin {
+    to {transform: rotate(360deg)}
+} 
