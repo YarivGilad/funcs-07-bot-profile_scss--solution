@@ -2,6 +2,8 @@ import styles from "./profile.module.scss";
 import { Robot } from "../../types";
 import { ImageLoader } from "../imageLoader/image-loader.view";
 
+type OptionalRobot = Partial<Robot>;
+
 export const Profile = ({
     id,
     first_name,
@@ -10,7 +12,7 @@ export const Profile = ({
     country,
     description,
     avatar
-}: Partial<Robot>) => {
+}: OptionalRobot) => {
     avatar = avatar?.replace("100x100", "300x300");
 
     return (
